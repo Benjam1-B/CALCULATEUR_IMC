@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Capriola&family=Coda&family=Coiny&family=Inter:wght@400;700&family=Lalezar&family=Raleway&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body onKeyPress="if (event.keyCode == 13) calculateIMC()">
+  <div class="opacity_font">
+  </div>
+  <div id="rectangle1">
+    <div class='rappel'>
+      <p class="rappel_bis">RAPPEL DE VOS MESURES:</p>
+      <p class="rappel_taille">170cm</p>
+      <p class="rappel_poids">70kg</p>
+    </div>
+    <div class="titre">
+      <h1 class="h1">Calculer votre <span class="imc">IMC</span></h1>
+    </div>
+    <div id="resnombre" class="resnombre">
+      <p id="nombre"></p>
+    </div>
+    <div id="restext" class="restext">
+      <p id="text"></p>
+    </div>
+    <div class="taille" id="taille">
+      <label for="height" class="label">Votre Taille</label>
+      <input type="text" id="height" class="input" name="taille" placeholder="cm" required minlength="2" maxlength="3" size="20" autocomplete="off">
+      <span id="tailleIcon" class="icon"></span>
+    </div>
+    <div class="poids" id="poids">
+      <label for="weight" class="label">Votre Poids</label>
+      <input type="text" id="weight" class="input" name="poids" placeholder="kg" required minlength="1" maxlength="3" size="20" autocomplete="off">
+      <span id="poidsIcon" class="icon"></span>
+    </div>
+    <div class="button" id="button">
+      <button type="button"><span class="resultat">RÉSULTAT</span></button>
+
+    </div>
+    <div id="reset" class="reset">
+      <img id="img" src="/images/icon_reset.png" alt="Images d'une fleche en rond" title="Reinitialisation">
+    </div>
+      <img src="/images/icon_plus.png" alt="Images d'un +" title="Plus d'infos" class="plus" id="plusImage">
+      <img src="/images/icon_moins.png" alt="Images d'un -" title="Moins d'infos" class="moins" id="moinsImage">
+  </div>
+  <div id="rectangle2">
+    <h2 id="titre2">titre</h2>
+    <div id="infoOMS">
+      <p id="info1">D’APRÈS L’ÉCHELLE DE L’OMS, VOUS ÊTES DE CORPULENCE NORMALE</p>
+      <p id="info2">beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequu</p>
+    </div>
+  </div>
+</body>
+</html>
